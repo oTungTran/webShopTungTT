@@ -18,7 +18,7 @@
 
 <body>
 
-    <!-- HEADER -->
+  <!-- HEADER -->
     <header class="header fixed-top">
         <!-- Topbar-->
         <div class="top_header topbar topbar-dark bg-dark">
@@ -45,15 +45,15 @@
                         <a class="search_btn" href=""><i class="fas fa-search"></i></a>
                         <div class="search_recmt">
                             <ul>
-                                <li><a href="cart.html"> Samsung Galaxy S20+</a> </li>
-                                <li><a href=""> Samsung Galaxy Note 20 Ultra</a> </li>
-                                <li><a href=""> Samsung Galaxy Note 10+</a> </li>
-                                <li><a href=""> Samsung Galaxy Note 8</a> </li>
-                                <li><a href=""> Samsung Galaxy Note 9</a> </li>
-                                <li><a href=""> Samsung Galaxy Note 7</a> </li>
-                                <li><a href=""> Samsung Galaxy S </a> </li>
-                                <li><a href=""> Samsung Galaxy Note 10+</a> </li>
-                                <li><a href=""> Samsung Galaxy Note 10+</a> </li>
+                                <li class="listRcmt"><a href="https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"> Samsung Galaxy S20+</a> </li>
+                                <li class="listRcmt"><a href="https://codepen.io/ng-ngc-sn-the-bashful/pen/dyovNrP"> Samsung Galaxy Note 20 Ultra</a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy Note 10+</a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy Note 8</a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy Note 9</a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy Note 7</a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy S </a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy Note 10+</a> </li>
+                                <li class="listRcmt"><a href=""> Samsung Galaxy Note 10+</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                 <p class="navbar-tool d-none d-lg-flex "><span class="navbar-tool-tooltip"><small>My Cart</small></br>$265.00</p>
                                 </a>
                             <div class="show_cart_header dropdown-menu" aria-labelledby="dropdownCart">
-                                <div class="header_product">
+                                <div class="header_product" id="scroll_bar_edit">
                                     <a class="dropdown-item" href="#">
                                         <div class="header_infor_order">
                                             <img src="https://fptshop.com.vn/Uploads/Originals/2020/2/12/637170945536714482_ss-s20-plus-den-1.png" alt="">
@@ -225,7 +225,7 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
                             <div class="modal_left">
-                                <img src="login.png" alt=""></div>
+                                <img src="https://i.pinimg.com/564x/da/c9/4f/dac94fde48bf7c103b660c459c51b1ba.jpg" alt=""></div>
                             <div class="modal_right">
                                 <form class="login_form">
                                     <div class="form-group">
@@ -238,7 +238,27 @@
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                     </div>
                                     <div class="forgot_pass">
-                                        <a href="">Forgot your password?</a>
+                                        <a href="" data-toggle="modal" data-target="#modal_forgot_password">Forgot your password?</a>
+                                        <!-- Modal forgot password-->
+                                        <div class="modal fade" id="modal_forgot_password" tabindex="-1" role="dialog" aria-labelledby="forgot_password" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="forgot_password">CONFIRM EMAIL FOR CHANGE PASSWORD</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <input type="email" class="form-control" id="confirmEmail" placeholder="Enter your email">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer footer_modal_update_addrs">
+                                                        <button type="button" class="btn btn-primary ">CONFIRM</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <button type="signin" class="btn btn-primary">SIGN IN</button>
                                     <div class="login_api">
@@ -259,7 +279,7 @@
                         </div>
                         <div class="register tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
                             <div class="modal_left_register">
-                                <img src="login.png" alt="">
+                                <img src="/resources/image/login.png" alt="">
                             </div>
                             <div class="modal_right_register">
                                 <div class="input-group mb-3">
